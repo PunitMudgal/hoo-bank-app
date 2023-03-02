@@ -1,0 +1,104 @@
+.cardDeal{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/*? left content  */
+.cardDeal-left_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:start;
+
+    margin-right: 4vw;
+}
+
+.cardDeal-left_content h1{
+    font-family: var(--font-head2);
+    font-size: 50px;
+    line-height: 65px;
+    font-weight: 500;
+    margin-bottom: 2vh;
+    text-transform: capitalize;
+    /* color: ; */
+}
+
+.cardDeal-left_content p{
+    font-size: 18px;
+    line-height: 30px;
+    font-family: var(--font-para);
+    margin-bottom: 2vw;
+    color: var(--color-gray);
+}
+
+.cardDeal-left_content button {
+    padding: 1.7vh 1.9vw;
+    font-size: 18px;
+    font-family: var(--font-para);
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+/*? right image container  */
+.cardDeal-image{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.cardDeal-image img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+@media screen and (max-width: 900px){
+    .cardDeal{
+        flex-direction: column;
+    }
+
+    .cardDeal-left_content{
+        margin-right: 0;
+        margin-bottom: 5vw;
+        align-items: center;
+
+    }
+
+    .cardDeal-left_content h1{
+        font-size: 45px;
+        line-height: 55px;
+    }
+    
+    .cardDeal-left_content p{
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 3vh ;
+    }
+    
+    .cardDeal-left_content button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    .cardDeal-left_content h1{
+        font-size: 38px;
+        line-height: 50px;
+    }
+    
+    .cardDeal-left_content p{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    .cardDeal-left_content button {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,92 @@
+.quote{
+    display: flex;
+    flex-direction: column;
+    /* todo */
+    max-width: 350px;
+    padding: 2.5rem;
+    border-radius: 19px;
+    margin-right: 3rem;
+}
+
+.quote:hover{
+     /* ff 3.6+ */
+     background:-moz-radial-gradient(circle at 3% 3%, rgba(255, 255, 0, 1) 0%, rgba(145, 145, 145, 0.47) 0%, rgba(0, 0, 0, 0.52) 100%);
+
+     /* safari 5.1+,chrome 10+ */
+     background:-webkit-radial-gradient(circle at 3% 3%, rgba(255, 255, 0, 1) 0%, rgba(145, 145, 145, 0.47) 0%, rgba(0, 0, 0, 0.52) 100%);
+ 
+     /* opera 11.10+ */
+     background:-o-radial-gradient(circle at 3% 3%, rgba(255, 255, 0, 1) 0%, rgba(145, 145, 145, 0.47) 0%, rgba(0, 0, 0, 0.52) 100%);
+ 
+     /* ie 10+ */
+     background:-ms-radial-gradient(circle at 3% 3%, rgba(255, 255, 0, 1) 0%, rgba(145, 145, 145, 0.47) 0%, rgba(0, 0, 0, 0.52) 100%);
+ 
+     /* global 92%+ browsers support */
+     background:radial-gradient(circle at 3% 3%, rgba(255, 255, 0, 1) 0%, rgba(145, 145, 145, 0.47) 0%, rgba(0, 0, 0, 0.52) 100%);
+}
+
+.quote-head p{
+    font-size: 21px;
+    font-family: var(--font-para);
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+}
+
+.quote-profile{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.quote-profile-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1vw;
+}
+
+.quote-profile-img img{
+    height: 52px;
+}
+
+.quote-profile-name h3{
+    font-weight: 500;
+    font-family: var(--font-head2);
+    font-size: 19px;
+}
+
+.quote-profile-name p{
+    font-weight: 500;
+    font-family: var(--font-para);
+    font-size: 15px;
+    color: var(--color-gray);
+}
+
+@media screen and (max-width:800px){
+    .quote{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:500px){
+
+    .quote-head p{
+        font-size: 19px;
+        margin-top: 3rem;
+        margin-bottom: 2.8rem;
+    }
+
+    .quote-profile-img img{
+        height: 48px;
+    }
+
+    .quote-profile-name h3{
+        font-weight: 500;
+        font-size: 19px;
+    }
+    
+    .quote-profile-name p{
+        font-size: 13px;
+    }
+    
+}

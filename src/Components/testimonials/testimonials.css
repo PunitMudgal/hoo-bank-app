@@ -1,0 +1,43 @@
+.testi {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.testi-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.testi-text h1{
+    display: flex;
+    align-items: start;
+    font-size: 50px;
+    font-family: var(--font-head1);
+    line-height: 70px;
+    /* todo */
+    max-width: 600px;
+}
+
+.testi-text p{
+    font-size: 20px;
+    font-family: var(--font-para);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* todo */
+    max-width: 550px;
+    /* margin-top: 1rem; */
+}
+
+.testi-quote{
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+
+
+
+/* todo --> make this responsive  */
