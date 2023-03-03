@@ -1,43 +1,80 @@
 .testi {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-.testi-text{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 4rem;
+.testi-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 4rem;
 }
 
-.testi-text h1{
-    display: flex;
-    align-items: start;
-    font-size: 50px;
-    font-family: var(--font-head1);
-    line-height: 70px;
-    /* todo */
-    max-width: 600px;
+.testi-text h1 {
+  display: flex;
+  align-items: start;
+  font-size: 50px;
+  font-family: var(--font-head1);
+  line-height: 70px;
+  /* todo */
+  max-width: 600px;
 }
 
-.testi-text p{
-    font-size: 20px;
-    font-family: var(--font-para);
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    /* todo */
-    max-width: 550px;
-    /* margin-top: 1rem; */
+.testi-text p {
+  font-size: 20px;
+  font-family: var(--font-para);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  /* todo */
+  max-width: 550px;
+  /* margin-top: 1rem; */
 }
 
-.testi-quote{
-    display: flex;
-    /* justify-content: space-between; */
-
+.testi-quote {
+  display: flex;
+  /* justify-content: space-between; */
 }
-
-
 
 /* todo --> make this responsive  */
+
+@media screen and (max-width: 900px) {
+  .testi-text {
+    flex-direction: column;
+  }
+
+  .testi-text h1 {
+    font-size: 45px;
+    line-height: 65px;
+    max-width: unset;
+  }
+
+  .testi-text p {
+    font-size: 18px;
+    justify-content: end;
+    align-items: center;
+    max-width: unset;
+  }
+
+  .testi-quote {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .testi-text h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .testi-text p {
+    font-size: 15px;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .testi-quote {
+    flex-direction: column;
+  }
+}

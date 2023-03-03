@@ -1,5 +1,6 @@
 import './App.css'
 import Billing from './Components/billing/Billing'
+import Brand from './Components/brand/Brand'
 import Business from './Components/business/Business'
 import CardDeal from './Components/cardDeal/CardDeal'
 import Home from './Components/home/Home'
@@ -24,7 +25,7 @@ function App() {
         <Billing/>
         <CardDeal/>
         <Testimonials/>
-        {/* <QuoteCards/> */}
+        <Brand/>
       </div>
     </div>
   )
