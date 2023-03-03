@@ -10,17 +10,7 @@ import Container from "../container/Container";
 export default function Business() {
   return (
     <div className="business section_padding">
-      {/* <div className="business-left_content">
-        <h1>You do the Business, we'll handle the money.</h1>
-        <p>
-          With the right credit card, you can improve uyour financial life by
-          building credit, earning rewards and saving money. But with hundreds
-          of cerdit cards on the market.
-        </p>
-        <button className="bg-blue-gradient" type="button">Get Started</button>
-      </div> */}
-
-
+     
       <Container title = "You do the Business, we'll handle the money." description="With the right credit card, you can improve uyour financial life by
           building credit, earning rewards and saving money. But with hundreds
           of cerdit cards on the market." />
